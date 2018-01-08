@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Unit Tests", "00 - Uni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XO.UnitTests", "XO.UnitTests\XO.UnitTests.csproj", "{4E87D13F-062F-4E44-BB83-EE8898BBC9F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - SOA", "01 - SOA", "{28BBFF15-CA2F-4FD4-9552-24DC0FC75473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XO.WCF", "XO.WCF\XO.WCF.csproj", "{2EDD17DB-C3F1-4374-A573-B34E69E7D052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +21,16 @@ Global
 		{4E87D13F-062F-4E44-BB83-EE8898BBC9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E87D13F-062F-4E44-BB83-EE8898BBC9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E87D13F-062F-4E44-BB83-EE8898BBC9F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDD17DB-C3F1-4374-A573-B34E69E7D052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDD17DB-C3F1-4374-A573-B34E69E7D052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDD17DB-C3F1-4374-A573-B34E69E7D052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDD17DB-C3F1-4374-A573-B34E69E7D052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4E87D13F-062F-4E44-BB83-EE8898BBC9F7} = {37285B26-6328-463F-B02E-2E46543A5CA2}
+		{2EDD17DB-C3F1-4374-A573-B34E69E7D052} = {28BBFF15-CA2F-4FD4-9552-24DC0FC75473}
 	EndGlobalSection
 EndGlobal
