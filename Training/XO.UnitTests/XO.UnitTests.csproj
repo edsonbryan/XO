@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdoSqlTests.cs" />
     <Compile Include="MongoDbTests.cs" />
     <Compile Include="StringManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XO.DB.SQL\XO.DB.SQL.csproj">
+      <Project>{50f7d575-ec8b-4879-85ff-070b37df3fd0}</Project>
+      <Name>XO.DB.SQL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
