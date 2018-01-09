@@ -16,7 +16,7 @@ namespace XO.NetCore.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
+        // GET api/values/5 
         [HttpGet("{id}")]
         public string Get(int id)
         {
