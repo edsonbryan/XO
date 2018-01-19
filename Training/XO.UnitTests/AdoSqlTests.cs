@@ -26,5 +26,14 @@ namespace XO.UnitTests
 
             database.PrintData();
         }
+
+        [Test]
+        public void GetListData()
+        {
+            var database = new Database();
+
+            var productos = database.GetProductos();
+            var tipos = database.GetTipos();
+        }
     }
 }
