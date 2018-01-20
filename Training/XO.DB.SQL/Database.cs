@@ -97,5 +97,30 @@ namespace XO.DB.SQL
 
             return tipos;
         }
+
+        public IEnumerable<TipoProducto> GetTiposYield()
+        {
+            var connection = new SqlConnection(connectionString);
+            var command = new SqlCommand("SELECT * FROM TipoProducto", connection);
+            
+            connection.Open();
+            var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                var id = reader.GetInt32(0);
+                var descripcion = reader.GetString(1);
+
+                var tipo = new TipoProducto
+                {
+                    Id = id,
+                    Descripcion = descripcion
+                };
+
+                yield return tipo;
+            }
+
+            connection.Close();
+        }
     }
 }

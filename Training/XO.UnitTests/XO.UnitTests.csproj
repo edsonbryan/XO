@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="AdoSqlTests.cs" />
     <Compile Include="EfSqlTests.cs" />
+    <Compile Include="FunctionalProgrammingTests.cs" />
     <Compile Include="MongoDbTests.cs" />
     <Compile Include="StringManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

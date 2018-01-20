@@ -34,6 +34,11 @@ namespace XO.UnitTests
 
             var productos = database.GetProductos();
             var tipos = database.GetTipos();
+
+            /*cannot debug beacuse lazy loading*/
+            var tiposYield = database.GetTiposYield();
+            
+            tiposYield.ToList();
         }
     }
 }
