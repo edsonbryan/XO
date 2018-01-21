@@ -1,6 +1,9 @@
 ﻿using NUnit.Framework;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using XO.DB.SqlEf;
+using XO.Entities;
 
 namespace XO.UnitTests
 {
@@ -23,6 +26,29 @@ namespace XO.UnitTests
             {
                 var actividades = contexto.Actividades.ToList();
             }
+        }
+
+        [Test]
+        public void GetTodaysTasks()
+        {
+            using (var contexto = new ContextoAgenda())
+            {
+                var actividades = contexto.Actividades.Where(TasksForToday).ToList();
+
+                var actividades2 = contexto.Actividades.Where(TasksForToday2).ToList();
+
+                var actividades3 = contexto.Actividades.Where(TasksForToday3).ToList();
+            }
+        }
+
+        public Func<Actividad, bool> TasksForToday = a => a.FechaInicio.Date.Equals(DateTime.Now.Date);
+
+        public bool TasksForToday2(Actividad actividad)
+            => actividad.FechaInicio.Date.Equals(DateTime.Now.Date);
+
+        public bool TasksForToday3(Actividad actividad)
+        {
+            return actividad.FechaInicio.Date.Equals(DateTime.Now.Date);
         }
     }
 }

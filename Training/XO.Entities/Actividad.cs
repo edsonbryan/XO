@@ -15,5 +15,7 @@ namespace XO.Entities
         public DateTime FechaInicio { get; set; }
 
         public DateTime FechaFin { get; set; }
+
+        public string Lugar { get; set; }
     }
 }

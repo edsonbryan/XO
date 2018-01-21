@@ -72,6 +72,7 @@
     <Compile Include="EfSqlTests.cs" />
     <Compile Include="FunctionalProgrammingTests.cs" />
     <Compile Include="MongoDbTests.cs" />
+    <Compile Include="SolidTests.cs" />
     <Compile Include="StringManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,6 +95,14 @@
     <ProjectReference Include="..\XO.Entities\XO.Entities.csproj">
       <Project>{f78e1320-da0a-4520-bb25-afc114bb0007}</Project>
       <Name>XO.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XO.SOLID.DI\XO.SOLID.DI.csproj">
+      <Project>{c1cff784-f7ea-4ef3-a01f-1954a8327a7e}</Project>
+      <Name>XO.SOLID.DI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XO.SOLID.LSP\XO.SOLID.LSP.csproj">
+      <Project>{e3987ae0-cc8a-4329-9e4b-89c56cd3b9b5}</Project>
+      <Name>XO.SOLID.LSP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
