@@ -1,0 +1,18 @@
+﻿@model XO.DB.SQL.TipoProducto
+
+@{
+    ViewBag.Title = "Editar Tipo Producto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Editar Tipo Producto</h2>
+
+<form method="post">
+    <label>Id</label>
+    <input readonly type="text" name="Id" id="Id" value="@Model.Id" />
+
+    <label>Descripción</label>
+    <input type="text" name="Descripcion" id="Descripcion" value="@Model.Descripcion" />
+
+    <input type="submit" value="Guardar" />
+</form>

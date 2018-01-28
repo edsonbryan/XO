@@ -1,0 +1,27 @@
+﻿@model IEnumerable<XO.DB.SQL.TipoProducto>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Descripcion</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Descripcion</td>
+        </tr>
+        }
+    </tbody>
+</table>
