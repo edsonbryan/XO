@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XO.SOLID.OC
+namespace XO.SOLID.OC.Niveles
 {
-    public class NivelSenior : NivelSalarial
+    public class NivelJunior : NivelSalarial
     {
         public override decimal CalcularSueldo()
         {
-            return 3000;
+            return base.CalcularSueldo() + 2500;
         }
     }
 }

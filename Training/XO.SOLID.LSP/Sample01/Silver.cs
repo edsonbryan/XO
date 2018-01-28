@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XO.SOLID.LSP
+namespace XO.SOLID.LSP.Sample01
 {
-    public class Golden : Customer
+    public class Silver : Customer
     {
         public override decimal GetDiscount(decimal totalSales)
         {
-            return base.GetDiscount(totalSales) - 50;
+            return base.GetDiscount(totalSales) - 100;
         }
 
         public override void Add()
         {
-            Console.WriteLine("Saving golden customer");
+            Console.WriteLine("Saving silver customer");
         }
     }
 }

@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdoSqlTests.cs" />
+    <Compile Include="DelegateTests.cs" />
+    <Compile Include="EDATests.cs" />
     <Compile Include="EfSqlTests.cs" />
     <Compile Include="FunctionalProgrammingTests.cs" />
     <Compile Include="MongoDbTests.cs" />
@@ -103,6 +105,10 @@
     <ProjectReference Include="..\XO.SOLID.LSP\XO.SOLID.LSP.csproj">
       <Project>{e3987ae0-cc8a-4329-9e4b-89c56cd3b9b5}</Project>
       <Name>XO.SOLID.LSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XO.SOLID.OC\XO.SOLID.OC.csproj">
+      <Project>{5a999ed9-980b-4c75-a844-a39628c30c28}</Project>
+      <Name>XO.SOLID.OC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

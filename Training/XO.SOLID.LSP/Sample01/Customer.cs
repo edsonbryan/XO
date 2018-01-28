@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XO.SOLID.LSP
+namespace XO.SOLID.LSP.Sample01
 {
     public abstract class Customer
     {

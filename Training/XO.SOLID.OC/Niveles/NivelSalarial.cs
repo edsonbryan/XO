@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XO.SOLID.OC
+namespace XO.SOLID.OC.Niveles
 {
     public abstract class NivelSalarial
     {
         public virtual bool SabeIngles { get; set; }
 
-        public abstract decimal CalcularSueldo();
+        public virtual decimal CalcularSueldo()
+        {
+            return SabeIngles ? 1000 : 0;
+        }
     }
 }
